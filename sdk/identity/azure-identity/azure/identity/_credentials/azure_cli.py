@@ -143,7 +143,6 @@ def _run_command(command):
         working_directory = get_safe_working_dir()
 
         kwargs = {
-            "stderr": subprocess.STDOUT,
             "cwd": working_directory,
             "universal_newlines": True,
             "env": dict(os.environ, AZURE_CORE_NO_COLOR="true"),
